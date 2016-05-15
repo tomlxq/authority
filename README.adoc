@@ -89,9 +89,13 @@ delete from user where user='';
 ----
 
 ### win cmd 命令行初始化数据库
+
+[source]
+----
 mysql -u root --default-character-set=utf8 -B   authority -e "source [your_path]\[project]\src\main\resources\sql\mysql\schema.sql"
 mysql -u root --default-character-set=utf8 -B   authority -e "source [your_path]\[project]\src\main\resources\sql\mysql\data.sql"
 mysql -u root --default-character-set=utf8 -B   authority -e "source [your_path]\[project]\src\main\resources\sql\mysql\authority.sql"
+----
 
 
 
