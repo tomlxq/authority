@@ -2,9 +2,11 @@
 https://github.com/cxjava/authority.git/
 42c14a32-d409-3914-30b1-ce57b7db7bff
 ////
-＝ 权限系统基本配置
+
+=== 权限系统基本配置
 
 ### BaseUserServiceImpl.java
+
 [source,java]
 ----
 private boolean execSend(String address, String title, String body) {
@@ -23,6 +25,7 @@ private boolean execSend(String address, String title, String body) {
 ----
 
 ### config.properties
+
 [source]
 ----
 #发送邮件服务器地址
@@ -41,6 +44,7 @@ jdbc.password=test
 ----
 
 ### web.xml
+
 [source,xml]
 <param-value>MYSQL</param-value>
 
@@ -57,6 +61,7 @@ logger.debug("{}",encoder.encode(DigestUtils.md5Hex("test")));;
 ----
 
 ### Controller.java
+
 [source,java]
 ----
 @ActiveProfiles("MYSQL")
